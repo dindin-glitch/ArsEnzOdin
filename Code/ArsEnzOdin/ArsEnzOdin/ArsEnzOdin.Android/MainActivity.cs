@@ -17,7 +17,7 @@ namespace ArsEnzOdin.Droid
         const string name = ""; //name recuperred idk how
         const int age = 0; //same, but for the age
 
-        private int AccountWork(string name, int age); //why it doesn't work?? please correct this idk why.
+        private int AccountWork(string name, int age); //why it doesn't work?? please fix this idk why.
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
