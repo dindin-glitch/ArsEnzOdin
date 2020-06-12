@@ -526,6 +526,9 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 365df5ffba7bf7ff1abdffff26bdffff32bdffff3af7ffff52f7ffff9cfbffff000000000828000012280000
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -583,9 +586,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Target: {x: 13.867434, y: -3.606175, z: -5.218692}
     speed: 2
     m_Value: {x: 13.867434, y: -3.606175, z: -5.218692}
+=======
+    m_Target: {x: -47.902367, y: -13.238684, z: -5.7061586}
+    speed: 2
+    m_Value: {x: -47.902367, y: -13.238684, z: -5.7061586}
+>>>>>>> Stashed changes
 =======
     m_Target: {x: -47.902367, y: -13.238684, z: -5.7061586}
     speed: 2
@@ -619,9 +628,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Target: 220.18178
     speed: 2
     m_Value: 220.18178
+=======
+    m_Target: 268.63535
+    speed: 2
+    m_Value: 268.63535
+>>>>>>> Stashed changes
 =======
     m_Target: 268.63535
     speed: 2
@@ -696,8 +711,13 @@ MonoBehaviour:
       width: 1015
       height: 492
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Scale: {x: 0.76951885, y: 0.7695188}
     m_Translation: {x: 502.00003, y: 246}
+=======
+    m_Scale: {x: 0.77871627, y: 0.7695188}
+    m_Translation: {x: 507.5, y: 246}
+>>>>>>> Stashed changes
 =======
     m_Scale: {x: 0.77871627, y: 0.7695188}
     m_Translation: {x: 507.5, y: 246}
@@ -709,9 +729,15 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       x: -652.3557
       y: -319.6803
       width: 1304.7114
+=======
+      x: -651.7136
+      y: -319.6803
+      width: 1303.4272
+>>>>>>> Stashed changes
 =======
       x: -651.7136
       y: -319.6803
