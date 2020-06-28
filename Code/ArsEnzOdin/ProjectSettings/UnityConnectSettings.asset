@@ -3,7 +3,11 @@
 --- !u!310 &1
 UnityConnectSettings:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_Enabled: 1
+=======
+  m_Enabled: 0
+>>>>>>> Odin
   m_TestMode: 0
   m_TestEventUrl: 
   m_TestConfigUrl: 
@@ -23,7 +27,11 @@ UnityConnectSettings:
     m_TestEventUrl: 
     m_TestConfigUrl: 
   UnityAdsSettings:
+<<<<<<< HEAD
     m_Enabled: 0
+=======
+    m_Enabled: 1
+>>>>>>> Odin
     m_InitializeOnStartup: 1
     m_TestMode: 0
     m_IosGameId: 

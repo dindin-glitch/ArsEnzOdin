@@ -14,6 +14,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 44
     width: 1680
     height: 926
@@ -21,6 +22,15 @@ MonoBehaviour:
   m_Title: 
   m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 542}
+=======
+    y: 43
+    width: 1366
+    height: 685
+  m_ShowMode: 4
+  m_Title: 
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> Odin
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -40,10 +50,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1680
     height: 876
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
+=======
+    width: 1366
+    height: 635
+  m_MinSize: {x: 683, y: 342}
+  m_MaxSize: {x: 12008, y: 8042}
+>>>>>>> Odin
   vertical: 0
   controlID: 49
 --- !u!114 &3
@@ -60,10 +77,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1339
     y: 0
     width: 341
     height: 876
+=======
+    x: 1089
+    y: 0
+    width: 277
+    height: 635
+>>>>>>> Odin
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -88,8 +112,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 331
     height: 530
+=======
+    width: 269
+    height: 364
+>>>>>>> Odin
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -112,6 +141,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 530
     width: 1339
     height: 346
@@ -123,6 +153,19 @@ MonoBehaviour:
   - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
+=======
+    y: 364
+    width: 1089
+    height: 271
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> Odin
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,9 +185,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1680
     height: 926
   m_MinSize: {x: 950, y: 542}
+=======
+    width: 1366
+    height: 685
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> Odin
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -162,7 +211,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1680
+=======
+    width: 1366
+>>>>>>> Odin
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -182,8 +235,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 906
     width: 1680
+=======
+    y: 665
+    width: 1366
+>>>>>>> Odin
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -205,10 +263,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1339
     height: 876
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
+=======
+    width: 1089
+    height: 635
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
+>>>>>>> Odin
   vertical: 1
   controlID: 50
 --- !u!114 &10
@@ -229,8 +294,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1339
     height: 530
+=======
+    width: 1089
+    height: 364
+>>>>>>> Odin
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
@@ -249,10 +319,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 331
     y: 0
     width: 1008
     height: 530
+=======
+    x: 269
+    y: 0
+    width: 820
+    height: 364
+>>>>>>> Odin
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
@@ -283,17 +360,33 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2
     y: 19
     width: 339
     height: 855
+=======
+    x: 1091
+    y: 92
+    width: 275
+    height: 614
+>>>>>>> Odin
   m_PersistentViewDataDictionary: {fileID: 0}
   m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
   m_GlobalObjectTypeName: 
   m_RegisteredViewURLs:
   - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
+<<<<<<< HEAD
   m_RegisteredViewInstances:
   - {fileID: 0}
+=======
+  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/collab
+  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/ads
+  m_RegisteredViewInstances:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+>>>>>>> Odin
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,9 +437,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 624
     width: 1337
     height: 325
+=======
+    y: 456
+    width: 1087
+    height: 250
+>>>>>>> Odin
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -366,6 +465,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: /Users/odinbeuchat/Documents/GitHub/ArsEnzOdin/Code/ArsEnzOdin
   m_IsLocked: 0
   m_FolderTreeState:
@@ -373,6 +473,15 @@ MonoBehaviour:
     m_SelectedIDs: 66270000
     m_LastClickedID: 10086
     m_ExpandedIDs: 000000006627000000ca9a3bffffff7f
+=======
+  m_LastProjectPath: C:\Users\odinb\Githubs\ArsEnzOdin\Code\ArsEnzOdin
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 84270000
+    m_LastClickedID: 10116
+    m_ExpandedIDs: 000000008427000000ca9a3bffffff7f
+>>>>>>> Odin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +509,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000066270000
+=======
+    m_ExpandedIDs: 0000000084270000
+>>>>>>> Odin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -425,10 +538,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
+=======
+    m_SelectedInstanceIDs: 3e280000
+    m_LastClickedInstanceID: 10302
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000
+>>>>>>> Odin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -477,15 +597,26 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1341
     y: 94
     width: 339
     height: 855
+=======
+    x: 1091
+    y: 92
+    width: 275
+    height: 614
+>>>>>>> Odin
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
+<<<<<<< HEAD
     m_CachedPref: -160
+=======
+    m_CachedPref: 160
+>>>>>>> Odin
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -512,6 +643,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 94
     width: 329
     height: 509
@@ -521,6 +653,17 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: a4fbffff00000000
+=======
+    y: 92
+    width: 267
+    height: 343
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a2fbffff
+    m_LastClickedID: -1118
+    m_ExpandedIDs: a2fbffff0000000002280000302800003e28000056280000
+>>>>>>> Odin
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -565,10 +708,17 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 333
     y: 94
     width: 1004
     height: 509
+=======
+    x: 271
+    y: 92
+    width: 816
+    height: 343
+>>>>>>> Odin
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 0
@@ -576,9 +726,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 13.727316, y: -3.6055322, z: -5.21875}
     speed: 2
     m_Value: {x: 13.727316, y: -3.6055322, z: -5.21875}
+=======
+    m_Target: {x: 4.979686, y: 0.22397314, z: 0.061119076}
+    speed: 2
+    m_Value: {x: 4.979686, y: 0.22397314, z: 0.061119076}
+>>>>>>> Odin
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -606,9 +762,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 220.18228
     speed: 2
     m_Value: 220.18228
+=======
+    m_Target: 8.934541
+    speed: 2
+    m_Value: 8.934541
+>>>>>>> Odin
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -642,23 +804,41 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 333
     y: 94
     width: 1004
     height: 509
+=======
+    x: 271
+    y: 92
+    width: 816
+    height: 343
+>>>>>>> Odin
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
+<<<<<<< HEAD
   m_SelectedSizes: 05000000000000001800000000000000000000000000000000000000000000000000000000000000
+=======
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+>>>>>>> Odin
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -502
     m_HBaseRangeMax: 502
     m_VBaseRangeMin: -246
     m_VBaseRangeMax: 246
+=======
+    m_HBaseRangeMin: -408
+    m_HBaseRangeMax: 408
+    m_VBaseRangeMin: -163
+    m_VBaseRangeMax: 163
+>>>>>>> Odin
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -675,28 +855,49 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 1004
       height: 492
     m_Scale: {x: 0.76951885, y: 0.7695188}
     m_Translation: {x: 502.00003, y: 245.82199}
+=======
+      width: 816
+      height: 326
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 408, y: 163}
+>>>>>>> Odin
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -652.3557
       y: -319.44897
       width: 1304.7114
       height: 639.3606
+=======
+      x: -408
+      y: -163
+      width: 816
+      height: 326
+>>>>>>> Odin
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1004, y: 509}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000100000100000100
+=======
+  m_LastWindowPixelSize: {x: 816, y: 343}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000100000100
+>>>>>>> Odin
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -720,7 +921,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 624
     width: 1337
     height: 325
+=======
+    y: 456
+    width: 1087
+    height: 250
+>>>>>>> Odin
   m_PersistentViewDataDictionary: {fileID: 0}
