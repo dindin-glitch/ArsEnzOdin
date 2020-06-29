@@ -3,28 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-<<<<<<< HEAD
-public class Main : MonoBehaviour {
-    
-    public int level = 0;
-    public Text levelTexte;
-
-    // Use this for initialization
-    void Start () {
-        
-    }
-
-    // Update is called once per frame
-    void Update () {
-        levelTexte.text = ("Level: " + level);
-    }
-    public void LevelAdd () {
-        level += 1;
-        
-        
-    }
-    
-=======
 
 
 public class Main : MonoBehaviour {
@@ -38,16 +16,20 @@ public class Main : MonoBehaviour {
     public Slider cooldownSlider;
     public int weapon = 1;
     public Text touchSpeedUp;
-    public Button touchSpeedUpButton;
     public Text speedDown;
     public int gold = 0;
     public int luck = 1;
     public string weaponName = "knife";
+    public Camera mainCamera;
+    public Toggle darkSwitch;
+    public bool darkBool;
+    public Slider darkSlider;
 
     // Use this for initialization
     void Start () {
         cooldownMax = 50 * (level / cooldownCoeff) + 4;
         cooldown = cooldownMax;
+        darkSlider.maxValue = 10;
 
     }
 
@@ -77,8 +59,24 @@ public class Main : MonoBehaviour {
                 weaponName = "revolver";
                 break;
             default:
-                weaponName = "GG, you found a bug! Please report it with the report menu!";
+                
                 break;
+        }
+        if (darkBool) {
+            if (darkSlider.value !=10) {
+                darkSlider.value += 1;
+            }
+        } else {
+            if (darkSlider.value != 0) {
+                darkSlider.value -= 1;
+            }
+        }
+        if (darkSwitch.isOn == true) {
+            mainCamera.backgroundColor = Color.black;
+            darkBool = true;
+        } else {
+            mainCamera.backgroundColor = Color.grey;
+            darkBool = false;
         }
         
     }
@@ -111,12 +109,12 @@ public class Main : MonoBehaviour {
     //StoreTouch is called when the player buy a weapon
     public void storeTouch () {
 
-        
         if (gold >= weapon * 5) {
             gold -= weapon * 5;
             weapon += 1;
 
         }
     }
->>>>>>> Odin
+
+    
 }
