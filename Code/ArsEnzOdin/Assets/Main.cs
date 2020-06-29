@@ -24,6 +24,8 @@ public class Main : MonoBehaviour {
     public Toggle darkSwitch;
     public bool darkBool;
     public Slider darkSlider;
+    public Text darkModeLabel;
+    public Text increaseLuck;
 
     // Use this for initialization
     void Start () {
@@ -37,13 +39,14 @@ public class Main : MonoBehaviour {
     void Update () {
         cooldownMax = 50 * (level / cooldownCoeff) + 4;
         cooldownSlider.maxValue = cooldownMax;
-        levelTexte.text = ("Gold: " + gold);
+        levelTexte.text = ("Level : " + level + "\n Gold: " + gold);
         if (cooldown < cooldownMax) {
             cooldown += 1;
         }
         cooldownSlider.value = cooldown;
         speedDown.text = ("Go to fitness : " + (cooldownCoeff * 4) + " gold \n Went : " + cooldownCoeff);
         touchSpeedUp.text = ("Buy weapon : " + (weapon * 5) + " gold \n Buyed : " + weaponName);
+        increaseLuck.text = ("Go to lottery : " + (luck * 7) + " gold \n Went : " + luck);
         switch (weapon)
         {
             case 1:
@@ -74,9 +77,13 @@ public class Main : MonoBehaviour {
         if (darkSwitch.isOn == true) {
             mainCamera.backgroundColor = Color.black;
             darkBool = true;
+            darkModeLabel.color = Color.white;
+            levelTexte.color = Color.white;
         } else {
             mainCamera.backgroundColor = Color.grey;
             darkBool = false;
+            darkModeLabel.color = Color.black;
+            levelTexte.color = Color.black;
         }
         
     }
@@ -116,5 +123,17 @@ public class Main : MonoBehaviour {
         }
     }
 
+    //StoreLuck is called when the character go to lottery
+    public void storeLuck () {
+        if (gold >= luck * 7) {
+            gold -= luck *7;
+            luck ++;
+            
+        }
+    }
     
+    //SettingScreen is called when the player hit the settings button
+    public void settingScreen () {
+        //Place here the code
+    }
 }
