@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 
 
+
 public class GameScreen : MonoBehaviour {
 
-    int cooldownMax = 1;
+    public int cooldownMax = 1;
     int cooldownCoeff = 2;
     int cooldownSpeed;
     int cooldown;
@@ -23,6 +24,8 @@ public class GameScreen : MonoBehaviour {
     public Camera mainCamera;
     public Text increaseLuck;
     int tick;
+    bool quest;
+    bool questCooldown;
 
 
 
@@ -36,7 +39,8 @@ public class GameScreen : MonoBehaviour {
 
     //Update is called once per frame.
     void Update () {
-        cooldownMax = 50 * (level / cooldownCoeff) + 4;
+
+        cooldownMax = 50 * (level / ( cooldownCoeff / 4 ) ) + 4;
         cooldownSlider.maxValue = cooldownMax;
         levelTexte.text = ("Level : " + level + "\n Gold: " + gold);
         if (cooldown < cooldownMax) {
@@ -61,30 +65,39 @@ public class GameScreen : MonoBehaviour {
                 weaponName = "revolver";
                 break;
             default:
-                
+                weaponName = "Weapon number " + weapon;
                 break;
         }
-        
+        if (quest && cooldown == cooldownMax)
+        {
+            questCooldown = true;
+            gold += luck * level;
+            quest = false;
+            while (tick != 10)
+            {
+                tick ++;
+            }
+            tick = 0;
+            questCooldown = false;
+        }
         
     }
 
     //LevelAdd is called when the button quest is hit
     public void LevelAdd () {
-        if (cooldown == cooldownMax) {
+        if (cooldown == cooldownMax && !questCooldown) {
             cooldown = 0;
-            while (cooldown != cooldownMax)
-            {
-                tick = 0;
-            }
             level +=1;
-            gold += luck * level;
+            quest = true;
         } else {
+            
             if (cooldown + weapon < cooldownMax) {
-                cooldown += weapon;
+                cooldown += weapon * 10;
             } else {
                 cooldown = cooldownMax;
             }
         }
+        cooldownMax = 50 * (level / cooldownCoeff) + 4;
 
     }
 
