@@ -5,33 +5,32 @@ using UnityEngine.UI;
 
 
 
-public class Main : MonoBehaviour {
+public class GameScreen : MonoBehaviour {
 
-    public int cooldownMax = 1;
-    public int cooldownCoeff = 2;
-    public int cooldownSpeed;
-    public int cooldown;
-    public int level = 0;
+    int cooldownMax = 1;
+    int cooldownCoeff = 2;
+    int cooldownSpeed;
+    int cooldown;
+    int level = 0;
     public Text levelTexte;
     public Slider cooldownSlider;
-    public int weapon = 1;
+    int weapon = 1;
     public Text touchSpeedUp;
     public Text speedDown;
-    public int gold = 0;
-    public int luck = 1;
-    public string weaponName = "knife";
+    int gold = 0;
+    int luck = 1;
+    string weaponName = "knife";
     public Camera mainCamera;
-    public Toggle darkSwitch;
-    public bool darkBool;
-    public Slider darkSlider;
-    public Text darkModeLabel;
     public Text increaseLuck;
+    int tick;
+
+
 
     // Use this for initialization
     void Start () {
         cooldownMax = 50 * (level / cooldownCoeff) + 4;
         cooldown = cooldownMax;
-        darkSlider.maxValue = 10;
+        
 
     }
 
@@ -65,35 +64,20 @@ public class Main : MonoBehaviour {
                 
                 break;
         }
-        if (darkBool) {
-            if (darkSlider.value !=10) {
-                darkSlider.value += 1;
-            }
-        } else {
-            if (darkSlider.value != 0) {
-                darkSlider.value -= 1;
-            }
-        }
-        if (darkSwitch.isOn == true) {
-            mainCamera.backgroundColor = Color.black;
-            darkBool = true;
-            darkModeLabel.color = Color.white;
-            levelTexte.color = Color.white;
-        } else {
-            mainCamera.backgroundColor = Color.grey;
-            darkBool = false;
-            darkModeLabel.color = Color.black;
-            levelTexte.color = Color.black;
-        }
+        
         
     }
 
     //LevelAdd is called when the button quest is hit
     public void LevelAdd () {
         if (cooldown == cooldownMax) {
+            cooldown = 0;
+            while (cooldown != cooldownMax)
+            {
+                tick = 0;
+            }
             level +=1;
             gold += luck * level;
-            cooldown = 0;
         } else {
             if (cooldown + weapon < cooldownMax) {
                 cooldown += weapon;
@@ -131,9 +115,8 @@ public class Main : MonoBehaviour {
             
         }
     }
+
     
-    //SettingScreen is called when the player hit the settings button
-    public void settingScreen () {
-        //Place here the code
-    }
+    
+    
 }
