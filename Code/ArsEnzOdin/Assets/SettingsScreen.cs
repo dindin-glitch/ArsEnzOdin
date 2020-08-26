@@ -11,6 +11,7 @@ public class SettingsScreen : MonoBehaviour {
     public Text darkModeLabel;
 	public Camera mainCamera;
 	public Text levelTexte;
+    public Text FPS;
 
 
 	// Use this for initialization
@@ -20,6 +21,7 @@ public class SettingsScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (darkBool) {
             if (darkSlider.value !=10) {
                 darkSlider.value += 1;
@@ -29,20 +31,22 @@ public class SettingsScreen : MonoBehaviour {
                 darkSlider.value -= 1;
             }
         }
+	}
+
+    public void ValueChanged() {
         if (darkSwitch.isOn == true) {
             mainCamera.backgroundColor = Color.black;
             darkBool = true;
             darkModeLabel.color = Color.white;
             levelTexte.color = Color.white;
+            FPS.color = Color.white;
         } else {
             mainCamera.backgroundColor = Color.grey;
             darkBool = false;
             darkModeLabel.color = Color.black;
             levelTexte.color = Color.black;
+            FPS.color = Color.black;
         }
-		
-	}
-
-
+    }
 
 }

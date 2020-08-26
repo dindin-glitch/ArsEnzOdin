@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 
 
@@ -9,7 +10,7 @@ using UnityEngine.UI;
 public class GameScreen : MonoBehaviour {
 
     public int cooldownMax = 1;
-    int cooldownCoeff = 2;
+    int cooldownCoeff = 1;
     int cooldownSpeed;
     int cooldown;
     int level = 0;
@@ -26,21 +27,26 @@ public class GameScreen : MonoBehaviour {
     int tick;
     bool quest;
     bool questCooldown;
+    int fps = 0;
+    public Text FPS;
+    DateTime timeLast;
 
 
 
     // Use this for initialization
     void Start () {
-        cooldownMax = 50 * (level / cooldownCoeff) + 4;
+        cooldownMax = 25 * (level / ((cooldownCoeff + 4) / 4) ) + 4;
         cooldown = cooldownMax;
         
 
     }
+    
 
     //Update is called once per frame.
     void Update () {
-
-        cooldownMax = 50 * (level / ( cooldownCoeff / 4 ) ) + 4;
+        FPS.Text = "FPS: " + (1 / (DateTime.Now - timeLast) ) * 1000;
+        timeLast = DateTime.Now;
+        cooldownMax = 25 * (level / ( (cooldownCoeff + 4) / 4 ) ) + 4;
         cooldownSlider.maxValue = cooldownMax;
         levelTexte.text = ("Level : " + level + "\n Gold: " + gold);
         if (cooldown < cooldownMax) {
