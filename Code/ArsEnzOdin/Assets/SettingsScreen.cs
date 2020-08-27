@@ -11,7 +11,7 @@ public class SettingsScreen : MonoBehaviour {
     public Text darkModeLabel;
 	public Camera mainCamera;
 	public Text levelTexte;
-    public Text FPS;
+    public Text FPStext;
 
 
 	// Use this for initialization
@@ -33,19 +33,20 @@ public class SettingsScreen : MonoBehaviour {
         }
 	}
 
-    public void ValueChanged() {
+    public void DarkMode() {
         if (darkSwitch.isOn == true) {
             mainCamera.backgroundColor = Color.black;
             darkBool = true;
             darkModeLabel.color = Color.white;
             levelTexte.color = Color.white;
-            FPS.color = Color.white;
+            FPStext.color = Color.white;
         } else {
             mainCamera.backgroundColor = Color.grey;
             darkBool = false;
             darkModeLabel.color = Color.black;
             levelTexte.color = Color.black;
-            FPS.color = Color.black;
+            FPStext.color = Color.black;
+
         }
     }
 

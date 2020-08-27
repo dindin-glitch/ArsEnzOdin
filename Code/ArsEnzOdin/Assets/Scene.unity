@@ -1436,6 +1436,7 @@ MonoBehaviour:
   speedDown: {fileID: 1750394264}
   mainCamera: {fileID: 119049837}
   increaseLuck: {fileID: 874503644}
+  FPS: {fileID: 1510643857}
 --- !u!1 &874503642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1741,7 @@ MonoBehaviour:
   darkModeLabel: {fileID: 844816903}
   mainCamera: {fileID: 119049837}
   levelTexte: {fileID: 1691512486}
+  FPStext: {fileID: 1510643857}
 --- !u!1 &1497969337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2427,7 +2429,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1338886335}
-        m_MethodName: ValueChanged
+        m_MethodName: DarkMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

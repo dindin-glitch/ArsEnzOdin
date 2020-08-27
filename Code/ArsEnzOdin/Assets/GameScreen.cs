@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Linq;
 
 
 
@@ -27,7 +28,6 @@ public class GameScreen : MonoBehaviour {
     int tick;
     bool quest;
     bool questCooldown;
-    int fps = 0;
     public Text FPS;
     DateTime timeLast;
 
@@ -44,11 +44,12 @@ public class GameScreen : MonoBehaviour {
 
     //Update is called once per frame.
     void Update () {
-        FPS.Text = "FPS: " + (1 / (DateTime.Now - timeLast) ) * 1000;
-        timeLast = DateTime.Now;
+
+
+        timeLast = DateTime.Now;        
         cooldownMax = 25 * (level / ( (cooldownCoeff + 4) / 4 ) ) + 4;
         cooldownSlider.maxValue = cooldownMax;
-        levelTexte.text = ("Level : " + level + "\n Gold: " + gold);
+        levelTexte.text = ("Level : " + level + "\n Gold: " + AbbrevationUtility.AbbreviateNumber(gold));
         if (cooldown < cooldownMax) {
             cooldown += 1;
         }
@@ -86,7 +87,7 @@ public class GameScreen : MonoBehaviour {
             tick = 0;
             questCooldown = false;
         }
-        
+        FPS.text = "FPS: " + DateTime.Now.Subtract(timeLast).Milliseconds;
     }
 
     //LevelAdd is called when the button quest is hit
@@ -103,7 +104,8 @@ public class GameScreen : MonoBehaviour {
                 cooldown = cooldownMax;
             }
         }
-        cooldownMax = 50 * (level / cooldownCoeff) + 4;
+        timeLast = DateTime.Now;
+        
 
     }
 
@@ -139,3 +141,26 @@ public class GameScreen : MonoBehaviour {
     
     
 }
+public static class AbbrevationUtility
+ {
+     private static readonly SortedDictionary<int, string> abbrevations = new SortedDictionary<int, string>
+     {
+         {10000,"0 K"},
+         {10000000, "0 M" },
+         {1000000000, " B" }
+     };
+ 
+     public static string AbbreviateNumber(float number)
+     {
+         for (int i = abbrevations.Count - 1; i >= 0; i--)
+         {
+             KeyValuePair<int, string> pair = abbrevations.ElementAt(i);
+             if (Mathf.Abs(number) >= pair.Key)
+             {
+                 int roundedNumber = Mathf.FloorToInt(number / pair.Key);
+                 return roundedNumber.ToString() + pair.Value;
+             }
+         }
+         return number.ToString();
+     }
+ }
